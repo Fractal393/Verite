@@ -26,9 +26,12 @@ function getUserFromToken(token) {
   return User.findById(userInfo.id);
 }
 
-await mongoose.connect('mongodb+srv://fractal:<password>@cluster0.g9jwl.mongodb.net/myFirstDatabase?retryWrites=true&w=majority', {useNewUrlParser:true,useUnifiedTopology:true,});
-const db = mongoose.connection;
-db.on('error', console.log);
+mongoose.connect("mongodb://fractal:test@cluster0-shard-00-00.g9jwl.mongodb.net:27017,cluster0-shard-00-01.g9jwl.mongodb.net:27017,cluster0-shard-00-02.g9jwl.mongodb.net:27017/reddit?ssl=true&replicaSet=atlas-6fx3zk-shard-0&authSource=admin&retryWrites=true&w=majority", {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+  })
+  .then(() => console.log("Connected to database."))
+  .catch((err) => console.error(err));
 
 app.get('/', (req, res) => {
   res.send('ok');
