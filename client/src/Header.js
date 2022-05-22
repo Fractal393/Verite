@@ -7,7 +7,7 @@ import {
   LogoutIcon,
   PlusIcon,
   SearchIcon,
-  UserIcon,SunIcon
+  UserIcon,SunIcon,GlobeAltIcon
 } from "@heroicons/react/outline";
 import Avatar from "./avatar.png";
 import ClickOutHandler from 'react-clickout-handler';
@@ -54,6 +54,9 @@ function Header() {
         </form>
         <div className=" bg-verite_light-brighter dark:bg-verite_dark-brighter rounded-full h-6 w-6 mt-1">
     <Toggle />
+    </div>
+    <div >
+    <GlobeAltIcon className=" text-gray-500 dark:text-gray-400 text-2xs cursor-pointer h-6 w-6 mt-1"/>
     </div>
      
 
