@@ -51,7 +51,7 @@ function Comment(props) {
       )}
       {!!comment && !!comment._id && (
         <>
-          <hr className="border-verite_dark my-4"/>
+          <hr className="border-verite_dark my-4 w-screen"/>
           <CommentForm onSubmit={() => refreshComments()}
                        rootId={comment._id} parentId={comment._id} showAuthor={true} />
           <hr className="border-verite_border my-4 "/>

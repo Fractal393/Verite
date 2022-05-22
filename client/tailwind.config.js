@@ -30,7 +30,7 @@ module.exports = {
         verite_border: {
           DEFAULT: '#374151',
         },
-        reddit_text: {
+        verite_text: {
           DEFAULT: 'rgb(215, 218, 220)',
           darker: '#818384',
         },

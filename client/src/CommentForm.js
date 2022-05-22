@@ -19,7 +19,7 @@ function CommentForm (props) {
       });
   }
   return (
-    <div className={'text-reddit_text '}>
+    <div className={'text-verite_text '}>
       {userInfo.username && props.showAuthor && (
         <div className="mb-2">
           Comment as {userInfo.username}

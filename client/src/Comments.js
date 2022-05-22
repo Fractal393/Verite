@@ -19,7 +19,7 @@ function Comments(props) {
         return (
           <div className={'mb-2'}>
             <div className="flex mb-2">
-              <div className="bg-verite_text w-screen   rounded-full mr-2"/>
+              <div className="bg-verite_text  w-10  rounded-full mr-2"/>
               <div className="leading-10 pr-2 text-lg font-sans">{comment.author}</div>
               <TimeAgo className="leading-10 text-md font-sans" datetime={comment.postedAt}/>
             </div>
