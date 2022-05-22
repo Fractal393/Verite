@@ -81,12 +81,12 @@ function AuthModal() {
           </label>
           )}
           {modalType === 'login' && (
-            <Button className="  w-full py-2 mb-3" style={{borderRadius:'.3rem'}} onClick={()=>login()}>
+            <Button className="  w-full py-2 mb-3" style={{borderRadius:'.4rem'}} onClick={()=>login()}>
               Log In
             </Button>
           )}
           {modalType === 'register' && flag == "verite{"+localStorage.getItem("codelocal")+"}" && (
-            <Button className="w-full py-2 mb-3" style={{borderRadius:'.3rem'}} onClick={e => register(e)}>
+            <Button className="w-full py-2 mb-3 mt-4 " style={{borderRadius:'.4rem'}} onClick={e => register(e)}>
               Sign Up
             </Button>
           )}

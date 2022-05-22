@@ -13,7 +13,7 @@ function SearchResultsPage(props) {
 
 
   return (
-    <div className="bg-reddit_dark">
+    <div className="bg-verite_light dark:bg-verite_dark round h-screen">
       {comments.map(comment => (
         <Post {...comment} isListing={true} />
       ))}
