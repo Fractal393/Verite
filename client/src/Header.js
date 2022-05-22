@@ -52,11 +52,11 @@ function Header() {
                  onChange={ev => setSearchText(ev.target.value)}
           />
         </form>
-        <div className=" bg-verite_light-brighter dark:bg-verite_dark-brighter rounded-full h-6 w-6 mt-1">
+        <div className=" bg-verite_light-brighter dark:bg-verite_dark-brighter rounded-full h-6 w-6 mt-1 mr-2">
     <Toggle />
     </div>
     <div >
-    <GlobeAltIcon className=" text-gray-500 dark:text-gray-400 text-2xs cursor-pointer h-6 w-6 mt-1"/>
+    <GlobeAltIcon className=" text-gray-500 dark:text-gray-400 text-2xs cursor-pointer h-6 w-6 mt-1 "/>
     </div>
      
 
