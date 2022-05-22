@@ -32,7 +32,7 @@ function Comments(props) {
                 <Voting commentId={comment._id} />
                 <Button type={'button'}
                         onClick={() => setShowForm(comment._id)}
-                        className=" bg-verite_light dark:bg-verite_darktext-gray-600 dark:text-gray-300 border-none py-2 pl-0 pr-0">Reply</Button>
+                        className=" bg-verite_light dark:bg-verite_dark text-gray-600 dark:text-gray-300 border-none py-2 pl-0 pr-0">Reply</Button>
                 {comment._id === showForm && (
                   <CommentForm
                     parentId={comment._id}
