@@ -39,10 +39,10 @@ function PostFormModal () {
 
   return (
     <div
-      className={"w-screen h-screen fixed top-0 left-0 z-20 flex "+visibleClass}  style={{backgroundColor:'rgba(0,0,0,.8)'}}>
+      className={"w-screen h-screen fixed top-0 left-0 z-20 flex "+visibleClass} >
       <ClickOutHandler onClickOut={() => {}  }>
-        <div className="border border-reddit_dark-brightest w-3/4 md:w-2/4 bg-reddit_dark p-5 text-reddit_text self-center mx-auto rounded-md">
-          <h1 className="text-2xl mb-5">Create a post</h1>
+        <div className="border border-gray-600 dark:border-gray-300 w-3/4 md:w-2/4 bg-verite_light dark:bg-verite_dark-brighter p-5 text-verite_text self-center mx-auto rounded-md">
+          <h1 className="text-gray-600 dark:text-gray-200 text-2xl mb-5">Create a post</h1>
           <Input
             className={'w-full mb-3'}
             placeholder={'Title'}

@@ -27,7 +27,7 @@ function CommentForm (props) {
       )}
 
       <form onSubmit={e => postComment(e)}>
-        <Textarea className="w-full mb-3 border border-reddit_border"
+        <Textarea className="w-full mb-3 border border-verite_border"
                   onChange={e => setCommentBody(e.target.value)}
                   value={commentBody}
                   placeholder={'Your comment. You can use markdown here'} />

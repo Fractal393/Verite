@@ -13,17 +13,17 @@ function Comments(props) {
   const rootCommentInfo = useContext(RootCommentContext);
 
   return (
-    <div className={'my-2 text-reddit_text'}>
+    <div className={'my-2 bg-verite_light dark:bg-verite_dark text-gray-600 dark:text-gray-300 '}>
       {comments.map(comment => {
         const replies = props.comments.filter(c => c.parentId === comment._id);
         return (
           <div className={'mb-2'}>
             <div className="flex mb-2">
-              <div className="bg-reddit_text w-10 h-10 rounded-full mr-2"/>
+              <div className="bg-verite_text w-screen   rounded-full mr-2"/>
               <div className="leading-10 pr-2 text-lg font-sans">{comment.author}</div>
               <TimeAgo className="leading-10 text-md font-sans" datetime={comment.postedAt}/>
             </div>
-            <div className="border-l-2 border-reddit_text-darker p-3 pb-0"
+            <div className="border-l-2 bg-verite_light dark:bg-verite_dark p-3 pb-0"
                  style={{marginLeft:'18px'}}>
               <div className="pl-4 -mt-4">
                 <div>
@@ -32,7 +32,7 @@ function Comments(props) {
                 <Voting commentId={comment._id} />
                 <Button type={'button'}
                         onClick={() => setShowForm(comment._id)}
-                        className="bg-reddit_dark-brighter text-reddit_text-darker border-none py-2 pl-0 pr-0">Reply</Button>
+                        className=" bg-verite_light dark:bg-verite_darktext-gray-600 dark:text-gray-300 border-none py-2 pl-0 pr-0">Reply</Button>
                 {comment._id === showForm && (
                   <CommentForm
                     parentId={comment._id}

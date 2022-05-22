@@ -6,6 +6,7 @@ import UserContext from "./UserContext";
 import Routing from "./Routing";
 import PostFormModalContext from "./PostFormModalContext";
 import RedirectContext from "./RedirectContext";
+import { ThemeProvider } from './ThemeContext';
 
 function App() {
   const [showAuthModal,setShowAuthModal] = useState(false);
@@ -25,6 +26,7 @@ function App() {
   }
 
   return (
+<ThemeProvider>
     <AuthModalContext.Provider value={{show:showAuthModal,setShow:setShowAuthModal}}>
       <PostFormModalContext.Provider value={{show:showPostFormModal,setShow:setShowPostFormModal}}>
         <UserContext.Provider value={{...user, logout, setUser}}>
@@ -34,6 +36,7 @@ function App() {
         </UserContext.Provider>
       </PostFormModalContext.Provider>
     </AuthModalContext.Provider>
+    </ThemeProvider>
   );
 }
 
