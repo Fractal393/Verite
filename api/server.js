@@ -26,7 +26,7 @@ function getUserFromToken(token) {
   return User.findById(userInfo.id);
 }
 
-mongoose.connect("mongodb://fractal:test@cluster0-shard-00-00.g9jwl.mongodb.net:27017,cluster0-shard-00-01.g9jwl.mongodb.net:27017,cluster0-shard-00-02.g9jwl.mongodb.net:27017/reddit?ssl=true&replicaSet=atlas-6fx3zk-shard-0&authSource=admin&retryWrites=true&w=majority", {
+mongoose.connect("mongodb://fractal:test@cluster0-shard-00-00.g9jwl.mongodb.net:27017,cluster0-shard-00-01.g9jwl.mongodb.net:27017,cluster0-shard-00-02.g9jwl.mongodb.net:27017/verite?ssl=true&replicaSet=atlas-6fx3zk-shard-0&authSource=admin&retryWrites=true&w=majority", {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
