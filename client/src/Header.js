@@ -63,11 +63,9 @@ function Header() {
     <Toggle />
     </div>
     <div >
-    <GlobeAltIcon className=" text-gray-500 dark:text-gray-400 text-2xs cursor-pointer h-6 w-6 mt-1 ml-2" onClick={goComp}/>
+    <GlobeAltIcon className=" text-gray-500 dark:text-gray-400 text-2xs cursor-pointer h-6 w-6 mt-1 ml-1" alt = "competitions" onClick={goComp}/>
     </div>
-    
-
-    
+  
 
         {!user.username && (
           <div className="mx-2 hidden sm:block">
