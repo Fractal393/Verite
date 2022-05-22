@@ -19,6 +19,7 @@ import {Link} from "react-router-dom";
 import RedirectContext from "./RedirectContext";
 import { ThemeContext } from './ThemeContext';
 import Toggle from "./ThemeToggle";
+import Competitions from "./competitions";
 function Header() {
   const [userDropdownVisibilityClass,setUserDropdownVisibilityClass] = useState('hidden');
   const [searchText,setSearchText] = useState('');
@@ -34,6 +35,12 @@ function Header() {
     ev.preventDefault();
     setRedirect('/search/'+encodeURIComponent(searchText));
   }
+
+  function goComp(ev) {
+    ev.preventDefault();
+    setRedirect('/Competitions');
+  }
+
   const authModal = useContext(AuthModalContext);
   const user = useContext(UserContext);
   return (
@@ -56,9 +63,9 @@ function Header() {
     <Toggle />
     </div>
     <div >
-    <GlobeAltIcon className=" text-gray-500 dark:text-gray-400 text-2xs cursor-pointer h-6 w-6 mt-1 "/>
+    <GlobeAltIcon className=" text-gray-500 dark:text-gray-400 text-2xs cursor-pointer h-6 w-6 mt-1 ml-2" onClick={goComp}/>
     </div>
-     
+    
 
     
 

@@ -4,6 +4,7 @@ import Board from "./Board";
 import CommentPage from "./CommentPage";
 import CommentModal from "./CommentModal";
 import SearchResultsPage from "./SearchResultsPage";
+import Competitions from "./competitions";
 
 function RoutingSwitch() {
 
@@ -45,6 +46,7 @@ function RoutingSwitch() {
         <Route exact path="/" component={Board} />
         <Route exact path="/comments/:id" component={CommentPage} />
         <Route exact path="/search/:text" component={SearchResultsPage} />
+        <Route exact path="/competitions" component={Competitions} />
       </Switch>
     </div>
   );
