@@ -19,14 +19,7 @@ module.exports = {
         
           brightest: '#4b5563',
         },
-        reddit_orange: '#f54404',
-        reddit_red: '#f54404',
-        reddit_dark: {
-          DEFAULT: '#030303',
-          brighter: '#1a1a1a',
-          
-          brightest: '#272728',
-        },
+      
         verite_border: {
           DEFAULT: '#374151',
         },
