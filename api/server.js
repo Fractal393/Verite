@@ -33,9 +33,12 @@ mongoose.connect("mongodb://fractal:test@cluster0-shard-00-00.g9jwl.mongodb.net:
   .then(() => console.log("Connected to database."))
   .catch((err) => console.error(err));
 
-app.get('/', (req, res) => {
-  res.send('ok');
-});
+  if (process.env.NODE_ENV === "production") {
+    app.use(express.static(path.resolve(__dirname, "build")));
+    app.get("/", (req, res) => {
+      res.sendFile(path.resolve(__dirname, "build", "index.html"));
+    });
+  }
 
 app.post('/register', (req, res) => {
   const {email,username} = req.body;
