@@ -17,7 +17,7 @@ function Competitions() {
 
         <p><span class="date font-bold">Approximate Annual Date: Jan-April</span></p>
         </div>
-        <div className="bg-verite_light-brighter  dark:bg-verite_dark-brighter   rounded-md my-3 px-6 py-4">
+        <div className="bg-verite_light-brighter  dark:bg-verite_dark-brighter text-gray-600 dark:text-gray-300    rounded-md my-3 px-6 py-4">
         <h1 className=" underline hover:no-underline font-bold  text-xl" ><a href="https://cansecwest.com">Pwn2Own</a></h1>
             <p className="font-semibold text-gray-500 dark:text-gray-400 ">Pwn2Own is a hacking contest presented annually at the CanSecWest Conference. The contests challenge cyber security professionals to find flaws and exploit consumer software and devices. $100,000’s in prizes are available annually for contest winners.
             </p>
