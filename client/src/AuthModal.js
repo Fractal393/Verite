@@ -53,7 +53,10 @@ function AuthModal() {
             <h1 className="bg-verite_light dark:bg-verite_dark text-2xl mb-5">Login</h1>
           )}
           {modalType === 'register' && (
+            <label>
             <h1 className="text-2xl mb-5">Sign Up</h1>
+            <h4>Check the console for the flag.</h4>
+            </label>
           )}
           {modalType === 'register' && (
             <label>
