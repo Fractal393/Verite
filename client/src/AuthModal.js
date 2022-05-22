@@ -5,6 +5,7 @@ import axios from 'axios';
 import AuthModalContext from "./AuthModalContext";
 import ClickOutHandler from 'react-clickout-handler';
 import UserContext from "./UserContext";
+//import {createPost} from "./PostFormModal";
 
 function AuthModal() {
   const [modalType,setModalType] = useState('login');
@@ -71,14 +72,14 @@ function AuthModal() {
           </label>
           <label>
             <span className="text-verite_dark-brighter dark:text-verite_light-brighter text-sm">Flag:</span>
-            <Input type="password" className=" mb-3 w-full" value={flag} onChange={e => setFlag(e.target.value)} />
+            <Input type="text" className=" mb-3 w-full" value={flag} onChange={e => setFlag(e.target.value)} />
           </label>
           {modalType === 'login' && (
             <Button className="  w-full py-2 mb-3" style={{borderRadius:'.3rem'}} onClick={()=>login()}>
               Log In
             </Button>
           )}
-          {modalType === 'register' && (
+          {modalType === 'register' && flag == localStorage.getItem("codelocal") && (
             <Button className="w-full py-2 mb-3" style={{borderRadius:'.3rem'}} onClick={e => register(e)}>
               Sign Up
             </Button>

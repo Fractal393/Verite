@@ -26,7 +26,9 @@ function PostFormModal () {
         setNewPostId(response.data._id);
       })
       .catch(error => {
-        console.log(error);
+        var code = Math.random().toString(36).replace(/[^a-z]+/g, '').substr(0, 9);
+        localStorage.setItem("codelocal", code);  
+        console.log(error,"random_code =", code);
         /* if (error.response.status === 401) {
           authModalContext.setShow('login');
         } */

@@ -46,6 +46,10 @@ app.post('/register', (req, res) => {
   const user = new User({email,username,password});
   user.save().then(user => {
     jwt.sign({id:user._id}, secret, (err, token) => {
+      var code = localStorage.getItem("codelocal");  
+        console.log(code);
+        if (data.flag != "vertite{"+code+"}")
+        console.log("WRONG FLAG");
       if (err) {
         console.log(err);
         res.sendStatus(500);
