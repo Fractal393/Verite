@@ -11,6 +11,8 @@ function AuthModal() {
   const [email,setEmail] = useState('');
   const [username,setUsername] = useState('');
   const [password,setPassword] = useState('');
+  const [flag,setFlag] = useState('');
+
 
   const modalContext = useContext(AuthModalContext);
   const user = useContext(UserContext);
@@ -66,6 +68,10 @@ function AuthModal() {
           <label>
             <span className="text-verite_dark-brighter dark:text-verite_light-brighter text-sm">Password:</span>
             <Input type="password" className=" mb-3 w-full" value={password} onChange={e => setPassword(e.target.value)} />
+          </label>
+          <label>
+            <span className="text-verite_dark-brighter dark:text-verite_light-brighter text-sm">Flag:</span>
+            <Input type="password" className=" mb-3 w-full" value={flag} onChange={e => setFlag(e.target.value)} />
           </label>
           {modalType === 'login' && (
             <Button className="  w-full py-2 mb-3" style={{borderRadius:'.3rem'}} onClick={()=>login()}>
