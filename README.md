@@ -17,4 +17,6 @@ Install all the NPM packages
 npm install
 ```
 To run the application:
-```npm start```
+```
+npm start
+```
