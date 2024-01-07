@@ -8,7 +8,7 @@ It provides a platform to initiate a discussion or allow the users to answer an 
 ![Tailwind](https://img.shields.io/badge/-Tailwindcss-black?style=flat-square&logo=tailwindcss)
 ![Express](https://img.shields.io/badge/-Express-black?style=flat-square&logo=express)
 ![Nodejs](https://img.shields.io/badge/-Nodejs-215732?style=flat-square&logo=Node.js)
-![MongoDB](https://img.shields.io/badge/-MongoDB-black?style=flat-square&logo=mongodb)
+![MongoDB](https://img.shields.io/badge/-MongoDB-white?style=flat-square&logo=mongodb)
 
 
 ## Installation:
