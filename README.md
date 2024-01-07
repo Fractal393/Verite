@@ -21,4 +21,4 @@ To run the application:
 npm start
 ```
 ## Homepage
-(https://docs.google.com/9d86d52c-6227-4135-8703-9b94964a5370)
+![Homepage](https://github.com/Fractal393/Verite/assets/54801158/74195399-f80d-458c-86c8-bd2e193a4fa5)
